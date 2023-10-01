@@ -21,7 +21,7 @@ const StartPage = (): JSX.Element => {
 
     async function fetchData(state: string) {
         try {
-            const res = await axios.get(`http://localhost:7017/providers/${state}`);
+            const res = await axios.get(`http://localhost:3306/providers/${state}`);
             setCards(res.data);
         } catch (err) {
             console.log(err);
